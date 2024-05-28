@@ -1,0 +1,26 @@
+name: js-action
+
+description: test javascript action
+
+author: $GITHUB_ACTOR
+
+inputs:
+  name:
+    description: name
+    default: Nemo
+  a:
+    description: first number
+    required: true
+  b:
+    description: second number
+    required: true
+
+
+outputs:
+  sum-result:
+    description: result of sum of first and second numbers
+
+runs:
+  using: 'node20'
+  main: 'index.js'
+  
